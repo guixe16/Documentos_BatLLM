@@ -26,78 +26,88 @@
 
 ## Ejemplo concreto de ejecución
 
-<!-- Una acción real de una partida (enlazar sesión o experimento) y cómo pasa por cada paso. -->
-Parte 1: registrar la acción durante el juego
+**Jugada:** sesión [`Segunda_partida-2026-10-26-22-51-15.json`](sesiones/Segunda_partida-2026-10-26-22-51-15.json), ronda 2, turno 1, **Bot 2**. El modelo respondió `A` (giro antihorario sin ángulo) y el juego lo marcó como `ERR`. Experimento: [2026-10-26-primera-partida.md](experimentos/2026-10-26-primera-partida.md), sección "Variante".
 
-1. Bot.process_llm_response, en src/game/bot.py:355
+*Redactado con asistencia de IA (Claude) a partir del recorrido del código.*
 
-Recibe: el texto crudo del modelo, "A".
-Hace:
-guarda last_llm_response = "A" (línea 363);
-llama a parse_model_response("A") (línea 364, definida en src/game/replay_engine.py:283). La A indica un giro antihorario, pero no hay número, así que devuelve normalized_cmd = "ERR" y valid = False;
-guarda last_cmd = "ERR" (línea 365). Como no es válido, no ejecuta nada y el estado del bot no cambia;
-muestra ERR en rojo en el panel Commands.
-Avisa: llama a board_widget.on_bot_llm_interaction_complete(self).
+### Parte 1: registrar la acción durante el juego
 
-2. GameBoard.on_bot_llm_interaction_complete, en src/game/game_board.py:543
+**1. `Bot.process_llm_response`** — `src/game/bot.py:355`
 
-Llama a history_manager.record_play(bot) (línea 549).
-Si ya jugaron los dos bots, llama a history_manager.end_turn(self) (línea 555) y agenda el turno siguiente.
+- **Recibe:** el texto crudo del modelo, `"A"`.
+- **Hace:**
+  - guarda `last_llm_response = "A"` (línea 363);
+  - llama a `parse_model_response("A")` (línea 364, definida en `src/game/replay_engine.py:283`). La `A` indica un giro antihorario, pero no hay número, así que devuelve `normalized_cmd = "ERR"` y `valid = False`;
+  - guarda `last_cmd = "ERR"` (línea 365). Como no es válido, **no ejecuta nada** y el estado del bot no cambia;
+  - muestra `ERR` en rojo en el panel Commands.
+- **Avisa:** llama a `board_widget.on_bot_llm_interaction_complete(self)`.
 
-3. HistoryManager.record_play, en src/game/history_manager.py:347
+**2. `GameBoard.on_bot_llm_interaction_complete`** — `src/game/game_board.py:543`
 
-Recibe: el objeto Bot.
-Produce: agrega a la lista plays del turno actual:
-{"bot_id": 2, "llm_response": "A", "cmd": "ERR"}
-Las jugadas quedan en el orden en que se ejecutaron (el orden sorteado de la ronda). Ese orden importa después para la reconstrucción.
+- Llama a `history_manager.record_play(bot)` (línea 549).
+- Si ya jugaron los dos bots, llama a `history_manager.end_turn(self)` (línea 555) y agenda el turno siguiente.
 
-4. El resto del ciclo de vida (mismo archivo)
+**3. `HistoryManager.record_play`** — `src/game/history_manager.py:347`
 
-start_round (línea 178): guarda initial_state, las reglas congeladas (gameplay_settings_snapshot, línea 214) y los prompts.
-start_turn (línea 315): crea el turno y guarda pre_state, una foto de todos los bots.
-end_turn (línea 366): guarda post_state y end_time.
-_get_bots_state (línea 414): arma esas fotos con id, health, x, y, rot, shield, current_prompt y last_llm_response.
+- **Recibe:** el objeto `Bot`.
+- **Produce:** agrega a la lista `plays` del turno actual:
 
-Todo se guarda en memoria, en self.games, hasta que el jugador guarda la sesión.
+  ```json
+  {"bot_id": 2, "llm_response": "A", "cmd": "ERR"}
+  ```
 
-Parte 2: guardar la sesión
+- Las jugadas quedan **en el orden en que se ejecutaron** (el orden sorteado de la ronda). Ese orden importa después para la reconstrucción.
 
-5. Botón Save Session, en src/view/home_screen.py, alrededor de la línea 570
+**4. El resto del ciclo de vida** — mismo archivo
 
-Resuelve la carpeta con resolve_saved_sessions_dir, que usa BATLLM_HOME, y comprueba que el nombre no “escape” de esa carpeta.
-Llama a history_manager.save_session(target_path) (línea 587).
+- `start_round` (línea 178): guarda `initial_state`, las reglas congeladas (`gameplay_settings_snapshot`, línea 214) y los prompts.
+- `start_turn` (línea 315): crea el turno y guarda `pre_state`, una foto de todos los bots.
+- `end_turn` (línea 366): guarda `post_state` y `end_time`.
+- `_get_bots_state` (línea 414): arma esas fotos con `id`, `health`, `x`, `y`, `rot`, `shield`, `current_prompt` y `last_llm_response`.
 
-6. HistoryManager.save_session, en src/game/history_manager.py:485
+Todo se guarda **en memoria**, en `self.games`, hasta que el jugador guarda la sesión.
 
-Filtra (líneas 492–511): exporta solo los turnos completos, con end_time, plays y post_state. Un turno a medio jugar no se guarda.
-Arma el sobre (línea 516): build_session_payload (src/game/session_schema.py:23) agrega schema_version: 2, session_type, app_version, saved_at y llm_metadata, que incluye el modelo y num_ctx.
-Valida (línea 522): validate_session_payload (session_schema.py:48) controla la estructura antes de escribir.
-Escribe de forma atómica (líneas 526–532): primero escribe un archivo temporal y después lo renombra con os.replace. Si algo falla a mitad de camino, no queda un JSON corrupto.
-Parte 3: el Game Analyzer
+### Parte 2: guardar la sesión
 
-7. Abrir la sesión, en src/view/analyzer_load_screen.py:153 (open_selected_session)
+**5. Botón Save Session** — `src/view/home_screen.py:547` (`_save_session_file`)
 
-load_session_payload (session_schema.py:130) lee el JSON y lo vuelve a validar. Si el formato no es v2, muestra un error de compatibilidad.
-Crea un AnalyzerSessionModel(payload, path) y se lo pasa a la pantalla de revisión (línea 169).
+- Resuelve la carpeta con `resolve_saved_sessions_dir`, que usa `BATLLM_HOME`, y comprueba que el nombre no "escape" de esa carpeta.
+- Llama a `history_manager.save_session(target_path)` (línea 587).
 
-8. AnalyzerSessionModel.round_steps, en src/analyzer_model.py:129
+**6. `HistoryManager.save_session`** — `src/game/history_manager.py:485`
 
-Para cada turno de la ronda llama a replay_turn(pre_state, plays, reglas, saved_post_state=post_state) (línea 140).
-Comprueba la continuidad (línea 146): el post_state de un turno tiene que coincidir con el pre_state del siguiente.
-Arma los pasos: “Turn start” más una entrada por jugada, con sus marcas [DMG], [ERR], [SHD] y [!].
+- **Filtra** (líneas 492–511): exporta solo los turnos completos, con `end_time`, `plays` y `post_state`. Un turno a medio jugar no se guarda.
+- **Arma el sobre** (línea 516): `build_session_payload` (`src/game/session_schema.py:23`) agrega `schema_version: 2`, `session_type`, `app_version`, `saved_at` y `llm_metadata`, que incluye el modelo y `num_ctx`.
+- **Valida** (línea 522): `validate_session_payload` (`session_schema.py:48`) controla la estructura antes de escribir.
+- **Escribe de forma atómica** (líneas 526–532): primero escribe un archivo temporal y después lo renombra con `os.replace`. Si algo falla a mitad de camino, no queda un JSON corrupto.
 
-9. replay_turn, en src/game/replay_engine.py:649. Acá ocurre la verificación. Hace dos controles distintos:
+### Parte 3: el Game Analyzer
 
-Grounding (líneas 662–663): vuelve a parsear la respuesta guardada ("A") con el mismo parse_model_response del juego en vivo y comprueba que dé el comando guardado ("ERR"). Si no coincide, marca “response-command disagreement”.
-Reproducción (líneas 664–673 y 675): parte del pre_state, aplica cada jugada en orden con apply_play (línea 461) y compara el estado obtenido con el post_state guardado usando compare_state_maps (línea 623). Las posiciones y rotaciones se comparan con una tolerancia de 0.000001; la vida y el escudo, exactos.
+**7. Abrir la sesión** — `src/view/analyzer_load_screen.py:153` (`open_selected_session`)
 
-En el ejemplo, "A" vuelve a dar ERR, igual que lo guardado, y apply_play no cambia nada, igual que el estado guardado. Por eso el turno sale con [ERR] pero sin [!]. Son los dos predicados del paper: grounding consistency y operative replay.
+- `load_session_payload` (`session_schema.py:130`) lee el JSON y lo vuelve a validar. Si el formato no es v2, muestra un error de compatibilidad.
+- Crea un `AnalyzerSessionModel(payload, path)` y se lo pasa a la pantalla de revisión (línea 169).
 
-10. Mostrarlo en pantalla, en src/view/analyzer_review_screen.py:194 (_refresh_view)
+**8. `AnalyzerSessionModel.round_steps`** — `src/analyzer_model.py:129`
 
-Pestaña Plays: model.format_plays() (analyzer_model.py:247) arma la línea Bot 2 llm='A' cmd=ERR (línea 218 de la pantalla).
-State Diff: format_state_diff() (línea 219).
-Tablero: analyzer_board.set_replay_state(...) (línea 231) dibuja el estado reconstruido, no el guardado.
+- Para cada turno de la ronda llama a `replay_turn(pre_state, plays, reglas, saved_post_state=post_state)` (línea 140).
+- **Comprueba la continuidad** (línea 146): el `post_state` de un turno tiene que coincidir con el `pre_state` del siguiente.
+- **Arma los pasos:** "Turn start" más una entrada por jugada, con sus marcas `[DMG]`, `[ERR]`, `[SHD]` y `[!]`.
+
+**9. `replay_turn`** — `src/game/replay_engine.py:649`
+
+Acá ocurre la verificación. Hace dos controles distintos:
+
+- **Grounding** (líneas 662–663): vuelve a parsear la respuesta guardada (`"A"`) con el mismo `parse_model_response` del juego en vivo y comprueba que dé el comando guardado (`"ERR"`). Si no coincide, marca *"response-command disagreement"*.
+- **Reproducción** (líneas 664–673 y 675): parte del `pre_state`, aplica cada jugada en orden con `apply_play` (línea 461) y compara el estado obtenido con el `post_state` guardado usando `compare_state_maps` (línea 623). Las posiciones y rotaciones se comparan con una tolerancia de 0.000001; la vida y el escudo, exactos.
+
+> En el ejemplo, `"A"` vuelve a dar `ERR`, igual que lo guardado, y `apply_play` no cambia nada, igual que el estado guardado. Por eso el turno sale con `[ERR]` pero sin `[!]`. Son los dos predicados del paper: *grounding consistency* y *operative replay*.
+
+**10. Mostrarlo en pantalla** — `src/view/analyzer_review_screen.py:194` (`_refresh_view`)
+
+- **Pestaña Plays:** `model.format_plays()` (`analyzer_model.py:247`) arma la línea `Bot 2 llm='A' cmd=ERR` (línea 218 de la pantalla).
+- **State Diff:** `format_state_diff()` (línea 219).
+- **Tablero:** `analyzer_board.set_replay_state(...)` (línea 231) dibuja el estado **reconstruido**, no el guardado.
 
 ## Dudas para la clase
 
