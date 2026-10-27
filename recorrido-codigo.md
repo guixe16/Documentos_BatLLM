@@ -28,8 +28,6 @@
 
 **Jugada:** sesión [`Segunda_partida-2026-10-26-22-51-15.json`](sesiones/Segunda_partida-2026-10-26-22-51-15.json), ronda 2, turno 1, **Bot 2**. El modelo respondió `A` (giro antihorario sin ángulo) y el juego lo marcó como `ERR`. Experimento: [2026-10-26-primera-partida.md](experimentos/2026-10-26-primera-partida.md), sección "Variante".
 
-*Redactado con asistencia de IA (Claude) a partir del recorrido del código.*
-
 ### Parte 1: registrar la acción durante el juego
 
 **1. `Bot.process_llm_response`** — `src/game/bot.py:355`
