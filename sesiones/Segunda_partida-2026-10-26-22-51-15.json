@@ -1,0 +1,1124 @@
+{
+    "schema_version": 2,
+    "session_type": "batllm_saved_session",
+    "app_version": "0.3.6",
+    "saved_at": "2026-10-26T22:51:25.701746",
+    "games": [
+        {
+            "game_id": 1,
+            "start_time": "2026-10-26T22:44:14.275055",
+            "initial_state": {},
+            "rounds": [
+                {
+                    "round": 1,
+                    "start_time": "2026-10-26T22:49:05.036224",
+                    "initial_state": {
+                        "1": {
+                            "id": 1,
+                            "health": 30,
+                            "x": 0.572826973606827,
+                            "y": 0.5580279055372922,
+                            "rot": 265.4625532707693,
+                            "shield": true,
+                            "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                            "last_llm_response": null
+                        },
+                        "2": {
+                            "id": 2,
+                            "health": 30,
+                            "x": 0.47104103608261605,
+                            "y": 0.4660867981844648,
+                            "rot": 150.2801317806348,
+                            "shield": true,
+                            "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                            "last_llm_response": null
+                        }
+                    },
+                    "gameplay_settings_snapshot": {
+                        "bot_diameter": 0.1,
+                        "bot_step_length": 0.03,
+                        "bullet_damage": 5,
+                        "bullet_diameter": 0.02,
+                        "bullet_step_length": 0.01,
+                        "shield_size": 70.0,
+                        "shield_initial_state": true,
+                        "initial_health": 30,
+                        "turns_per_round": 8,
+                        "total_rounds": 2
+                    },
+                    "prompts": [
+                        {
+                            "bot_id": 1,
+                            "prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima."
+                        },
+                        {
+                            "bot_id": 2,
+                            "prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima."
+                        }
+                    ],
+                    "turns": [
+                        {
+                            "turn": 1,
+                            "start_time": "2026-10-26T22:49:05.053222",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": null
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": null
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:09.686145"
+                        },
+                        {
+                            "turn": 2,
+                            "start_time": "2026-10-26T22:49:09.703653",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:14.402857"
+                        },
+                        {
+                            "turn": 3,
+                            "start_time": "2026-10-26T22:49:14.419854",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:19.135959"
+                        },
+                        {
+                            "turn": 4,
+                            "start_time": "2026-10-26T22:49:19.152959",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 150.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A90",
+                                    "cmd": "A90.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:23.919608"
+                        },
+                        {
+                            "turn": 5,
+                            "start_time": "2026-10-26T22:49:23.935665",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:28.718433"
+                        },
+                        {
+                            "turn": 6,
+                            "start_time": "2026-10-26T22:49:28.735426",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:33.685309"
+                        },
+                        {
+                            "turn": 7,
+                            "start_time": "2026-10-26T22:49:33.702920",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 85.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:38.518178"
+                        },
+                        {
+                            "turn": 8,
+                            "start_time": "2026-10-26T22:49:38.536178",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:49:43.319076"
+                        }
+                    ],
+                    "end_time": "2026-10-26T22:49:43.335708"
+                },
+                {
+                    "round": 2,
+                    "start_time": "2026-10-26T22:49:58.667237",
+                    "initial_state": {
+                        "1": {
+                            "id": 1,
+                            "health": 25,
+                            "x": 0.572826973606827,
+                            "y": 0.5580279055372922,
+                            "rot": 265.4625532707693,
+                            "shield": false,
+                            "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                            "last_llm_response": "S0"
+                        },
+                        "2": {
+                            "id": 2,
+                            "health": 30,
+                            "x": 0.47104103608261605,
+                            "y": 0.4660867981844648,
+                            "rot": 240.2801317806348,
+                            "shield": false,
+                            "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                            "last_llm_response": "S0"
+                        }
+                    },
+                    "gameplay_settings_snapshot": {
+                        "bot_diameter": 0.1,
+                        "bot_step_length": 0.03,
+                        "bullet_damage": 5,
+                        "bullet_diameter": 0.02,
+                        "bullet_step_length": 0.01,
+                        "shield_size": 70.0,
+                        "shield_initial_state": true,
+                        "initial_health": 30,
+                        "turns_per_round": 8,
+                        "total_rounds": 2
+                    },
+                    "prompts": [
+                        {
+                            "bot_id": 1,
+                            "prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar."
+                        },
+                        {
+                            "bot_id": 2,
+                            "prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar."
+                        }
+                    ],
+                    "turns": [
+                        {
+                            "turn": 1,
+                            "start_time": "2026-10-26T22:49:58.685236",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A",
+                                    "cmd": "ERR"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "C0",
+                                    "cmd": "C0.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "C0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:03.801105"
+                        },
+                        {
+                            "turn": 2,
+                            "start_time": "2026-10-26T22:50:03.818312",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 265.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "C0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A60",
+                                    "cmd": "A60.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A60"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:09.034600"
+                        },
+                        {
+                            "turn": 3,
+                            "start_time": "2026-10-26T22:50:09.051599",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A60"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.47104103608261605,
+                                    "y": 0.4660867981844648,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.48591383159396734,
+                                    "y": 0.4921405878066585,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:14.250296"
+                        },
+                        {
+                            "turn": 4,
+                            "start_time": "2026-10-26T22:50:14.268295",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 25,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.48591383159396734,
+                                    "y": 0.4921405878066585,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.48591383159396734,
+                                    "y": 0.4921405878066585,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:19.551249"
+                        },
+                        {
+                            "turn": 5,
+                            "start_time": "2026-10-26T22:50:19.568615",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 205.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.48591383159396734,
+                                    "y": 0.4921405878066585,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 25.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:24.850256"
+                        },
+                        {
+                            "turn": 6,
+                            "start_time": "2026-10-26T22:50:24.867256",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.5457409798024655,
+                                    "y": 0.5451302724354362,
+                                    "rot": 25.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 60.280131780634804,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 25.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:30.030137"
+                        },
+                        {
+                            "turn": 7,
+                            "start_time": "2026-10-26T22:50:30.041688",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 25.46255327076932,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A90",
+                                    "cmd": "A90.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 295.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:35.383726"
+                        },
+                        {
+                            "turn": 8,
+                            "start_time": "2026-10-26T22:50:35.400726",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 295.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.5007866271053186,
+                                    "y": 0.5181943774288522,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 20,
+                                    "x": 0.572826973606827,
+                                    "y": 0.5580279055372922,
+                                    "rot": 295.4625532707693,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 25,
+                                    "x": 0.48591383159396734,
+                                    "y": 0.4921405878066585,
+                                    "rot": 240.2801317806348,
+                                    "shield": false,
+                                    "current_prompt": "Primero girá hasta quedar mirando al enemigo. Después acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:50:40.617435"
+                        }
+                    ],
+                    "end_time": "2026-10-26T22:50:40.635059"
+                }
+            ],
+            "winner": null,
+            "end_time": "2026-10-26T22:50:40.635059"
+        }
+    ],
+    "llm_metadata": {
+        "configured_model": "llama3.2:3b",
+        "last_served_model": "llama3.2:3b",
+        "request_timeout": 75.0,
+        "warmup_timeout": 30.0,
+        "url": "http://localhost",
+        "port": 11434,
+        "config_snapshot": {
+            "num_ctx": 4096,
+            "path": "/api/chat"
+        },
+        "provider_metadata": {}
+    }
+}

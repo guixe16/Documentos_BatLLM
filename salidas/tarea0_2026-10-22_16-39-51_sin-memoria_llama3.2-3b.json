@@ -1,0 +1,38 @@
+{
+  "fecha": "2026-10-22T16:39:51",
+  "modelo": "llama3.2:3b",
+  "modo": "sin-memoria",
+  "opciones": {
+    "temperature": 0
+  },
+  "turnos": [
+    {
+      "turno": 1,
+      "hora": "2026-10-22T16:39:15",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "Hola, mi nombre es Guillermo. ¿Cómo estás?"
+        }
+      ],
+      "respuesta": "¡Hola Guillermo! Me alegra conocerte. Como soy una inteligencia artificial, no tengo emociones ni sentimientos como los humanos, pero estoy aquí para ayudarte y responder a tus preguntas. ¿En qué puedo ayudarte hoy?",
+      "tokens_entrada": 38,
+      "tokens_salida": 52,
+      "duracion_segundos": 4.83
+    },
+    {
+      "turno": 2,
+      "hora": "2026-10-22T16:39:30",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "¿Podrías decirme cuál es mi nombre?"
+        }
+      ],
+      "respuesta": "Lo siento, pero no tengo acceso a información personal sobre ti. Soy un modelo de lenguaje de inteligencia artificial y no tengo la capacidad de recordar o acceder a información personal sobre los usuarios. Mi función es proporcionar información y responder a preguntas basadas en mi entrenamiento, pero no tengo conocimiento sobre tu identidad o cualquier información personal. ¿Hay algo más en lo que pueda ayudarte?",
+      "tokens_entrada": 37,
+      "tokens_salida": 87,
+      "duracion_segundos": 1.08
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "fecha": "2026-10-22T16:41:52",
+  "modelo": "llama3.2:3b",
+  "modo": "con-memoria",
+  "opciones": {
+    "temperature": 0
+  },
+  "turnos": [
+    {
+      "turno": 1,
+      "hora": "2026-10-22T16:40:45",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "Hola. Mi nombre es Guillermo. ¿Cómo estás?"
+        }
+      ],
+      "respuesta": "Hola Guillermo! Me alegra conocerte. Como soy una inteligencia artificial, no tengo sentimientos o emociones como los humanos, pero estoy aquí para ayudarte y responder a tus preguntas. ¿En qué puedo ayudarte hoy?",
+      "tokens_entrada": 38,
+      "tokens_salida": 51,
+      "duracion_segundos": 0.85
+    },
+    {
+      "turno": 2,
+      "hora": "2026-10-22T16:40:55",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "Hola. Mi nombre es Guillermo. ¿Cómo estás?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola Guillermo! Me alegra conocerte. Como soy una inteligencia artificial, no tengo sentimientos o emociones como los humanos, pero estoy aquí para ayudarte y responder a tus preguntas. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "role": "user",
+          "content": "¿Podrías decirme cuál es mi nombre?"
+        }
+      ],
+      "respuesta": "Disculpa la confusión anterior, Guillermo. Tu nombre es Guillermo, que me dijiste al principio. ¿Quieres hablar sobre algo en particular o necesitas ayuda con algo? Estoy aquí para ayudarte.",
+      "tokens_entrada": 110,
+      "tokens_salida": 48,
+      "duracion_segundos": 0.66
+    },
+    {
+      "turno": 3,
+      "hora": "2026-10-22T16:41:12",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "Hola. Mi nombre es Guillermo. ¿Cómo estás?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola Guillermo! Me alegra conocerte. Como soy una inteligencia artificial, no tengo sentimientos o emociones como los humanos, pero estoy aquí para ayudarte y responder a tus preguntas. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "role": "user",
+          "content": "¿Podrías decirme cuál es mi nombre?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpa la confusión anterior, Guillermo. Tu nombre es Guillermo, que me dijiste al principio. ¿Quieres hablar sobre algo en particular o necesitas ayuda con algo? Estoy aquí para ayudarte."
+        },
+        {
+          "role": "user",
+          "content": "¿Puedes decirme qué día es hoy?"
+        }
+      ],
+      "respuesta": "Lo siento, Guillermo. Como soy una inteligencia artificial, no tengo acceso a la fecha actual en el tiempo real. Mi conocimiento se basa en la fecha de corte que tengo, que es diciembre de 2023. Sin embargo, puedo sugerirte algunas opciones para encontrar la fecha actual:\n\n* Puedes buscar en tu dispositivo móvil o computadora la fecha actual.\n* Puedes preguntar a un asistente virtual como Siri, Google Assistant o Alexa.\n* Puedes consultar un calendario o una fuente de noticias en línea.\n\nEspero que esto te ayude, Guillermo. ¿Necesitas algo más?",
+      "tokens_entrada": 178,
+      "tokens_salida": 141,
+      "duracion_segundos": 1.55
+    },
+    {
+      "turno": 4,
+      "hora": "2026-10-22T16:41:39",
+      "mensajes_enviados": [
+        {
+          "role": "user",
+          "content": "Hola. Mi nombre es Guillermo. ¿Cómo estás?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola Guillermo! Me alegra conocerte. Como soy una inteligencia artificial, no tengo sentimientos o emociones como los humanos, pero estoy aquí para ayudarte y responder a tus preguntas. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "role": "user",
+          "content": "¿Podrías decirme cuál es mi nombre?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpa la confusión anterior, Guillermo. Tu nombre es Guillermo, que me dijiste al principio. ¿Quieres hablar sobre algo en particular o necesitas ayuda con algo? Estoy aquí para ayudarte."
+        },
+        {
+          "role": "user",
+          "content": "¿Puedes decirme qué día es hoy?"
+        },
+        {
+          "role": "assistant",
+          "content": "Lo siento, Guillermo. Como soy una inteligencia artificial, no tengo acceso a la fecha actual en el tiempo real. Mi conocimiento se basa en la fecha de corte que tengo, que es diciembre de 2023. Sin embargo, puedo sugerirte algunas opciones para encontrar la fecha actual:\n\n* Puedes buscar en tu dispositivo móvil o computadora la fecha actual.\n* Puedes preguntar a un asistente virtual como Siri, Google Assistant o Alexa.\n* Puedes consultar un calendario o una fuente de noticias en línea.\n\nEspero que esto te ayude, Guillermo. ¿Necesitas algo más?"
+        },
+        {
+          "role": "user",
+          "content": "¿Podrías decirme cuál es mi nombre y qué estoy interesado en saber?"
+        }
+      ],
+      "respuesta": "Guillermo, ya lo conocí al principio. Tu nombre es Guillermo. Y, según parece, estás interesado en saber cuál es el día actual, lo cual es algo que no puedo determinar con precisión debido a que mi conocimiento se basa en la fecha de corte de diciembre de 2023. Sin embargo, puedo ayudarte a encontrar la fecha actual o proporcionarte información sobre cómo hacerlo. ¿Quieres que te ayude con eso?",
+      "tokens_entrada": 347,
+      "tokens_salida": 101,
+      "duracion_segundos": 1.25
+    }
+  ]
+}

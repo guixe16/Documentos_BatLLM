@@ -1,0 +1,1124 @@
+{
+    "schema_version": 2,
+    "session_type": "batllm_saved_session",
+    "app_version": "0.3.6",
+    "saved_at": "2026-10-26T22:27:11.951955",
+    "games": [
+        {
+            "game_id": 1,
+            "start_time": "2026-10-26T22:22:23.551193",
+            "initial_state": {},
+            "rounds": [
+                {
+                    "round": 1,
+                    "start_time": "2026-10-26T22:24:11.970857",
+                    "initial_state": {
+                        "1": {
+                            "id": 1,
+                            "health": 30,
+                            "x": 0.1590384710767644,
+                            "y": 0.5721724894157612,
+                            "rot": 245.11155456706487,
+                            "shield": true,
+                            "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                            "last_llm_response": null
+                        },
+                        "2": {
+                            "id": 2,
+                            "health": 30,
+                            "x": 0.918293055009639,
+                            "y": 0.39536483422902796,
+                            "rot": 56.392520124136325,
+                            "shield": true,
+                            "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                            "last_llm_response": null
+                        }
+                    },
+                    "gameplay_settings_snapshot": {
+                        "bot_diameter": 0.1,
+                        "bot_step_length": 0.03,
+                        "bullet_damage": 5,
+                        "bullet_diameter": 0.02,
+                        "bullet_step_length": 0.01,
+                        "shield_size": 70.0,
+                        "shield_initial_state": true,
+                        "initial_health": 30,
+                        "turns_per_round": 8,
+                        "total_rounds": 2
+                    },
+                    "prompts": [
+                        {
+                            "bot_id": 1,
+                            "prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n"
+                        },
+                        {
+                            "bot_id": 2,
+                            "prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima."
+                        }
+                    ],
+                    "turns": [
+                        {
+                            "turn": 1,
+                            "start_time": "2026-10-26T22:24:11.988857",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": null
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": null
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:24.421876"
+                        },
+                        {
+                            "turn": 2,
+                            "start_time": "2026-10-26T22:24:24.439437",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S0"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "S1",
+                                    "cmd": "S1"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "S1"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:29.023056"
+                        },
+                        {
+                            "turn": 3,
+                            "start_time": "2026-10-26T22:24:29.038130",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "S1"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "S1",
+                                    "cmd": "S1"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S1"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:33.716874"
+                        },
+                        {
+                            "turn": 4,
+                            "start_time": "2026-10-26T22:24:33.732879",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 245.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 56.392520124136325,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "S1"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A90",
+                                    "cmd": "A90.0"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "C155",
+                                    "cmd": "C155.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "A90"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 211.39252012413633,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "C155"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:38.434471"
+                        },
+                        {
+                            "turn": 5,
+                            "start_time": "2026-10-26T22:24:38.446673",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "A90"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 211.39252012413633,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "C155"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "S0",
+                                    "cmd": "S0"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 211.39252012413633,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:43.271169"
+                        },
+                        {
+                            "turn": 6,
+                            "start_time": "2026-10-26T22:24:43.288170",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "S0"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 211.39252012413633,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "C155",
+                                    "cmd": "C155.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 6.392520124136354,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "C155"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:48.221151"
+                        },
+                        {
+                            "turn": 7,
+                            "start_time": "2026-10-26T22:24:48.238150",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.1590384710767644,
+                                    "y": 0.5721724894157612,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 6.392520124136354,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "C155"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A6",
+                                    "cmd": "A6.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.13182460395272755,
+                                    "y": 0.5847980759825416,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A6"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:53.138242"
+                        },
+                        {
+                            "turn": 8,
+                            "start_time": "2026-10-26T22:24:53.164635",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.13182460395272755,
+                                    "y": 0.5847980759825416,
+                                    "rot": 155.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "A6"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A6",
+                                    "cmd": "A6.0"
+                                },
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.13182460395272755,
+                                    "y": 0.5847980759825416,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.\n",
+                                    "last_llm_response": "A6"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Responde sólamente con comandos para poder controlar al robot. Ataca y defiéndete de la manera más óptima.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:24:57.972465"
+                        }
+                    ],
+                    "end_time": "2026-10-26T22:24:57.988683"
+                },
+                {
+                    "round": 2,
+                    "start_time": "2026-10-26T22:25:52.219158",
+                    "initial_state": {
+                        "1": {
+                            "id": 1,
+                            "health": 30,
+                            "x": 0.13182460395272755,
+                            "y": 0.5847980759825416,
+                            "rot": 149.11155456706487,
+                            "shield": false,
+                            "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                            "last_llm_response": "A6"
+                        },
+                        "2": {
+                            "id": 2,
+                            "health": 30,
+                            "x": 0.918293055009639,
+                            "y": 0.39536483422902796,
+                            "rot": 0.39252012413635384,
+                            "shield": true,
+                            "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                            "last_llm_response": "B"
+                        }
+                    },
+                    "gameplay_settings_snapshot": {
+                        "bot_diameter": 0.1,
+                        "bot_step_length": 0.03,
+                        "bullet_damage": 5,
+                        "bullet_diameter": 0.02,
+                        "bullet_step_length": 0.01,
+                        "shield_size": 70.0,
+                        "shield_initial_state": true,
+                        "initial_health": 30,
+                        "turns_per_round": 8,
+                        "total_rounds": 2
+                    },
+                    "prompts": [
+                        {
+                            "bot_id": 1,
+                            "prompt": "Acercate lo más que puedas y concentrate en atacar.\n"
+                        },
+                        {
+                            "bot_id": 2,
+                            "prompt": "Acercate lo más que puedas y concentrate en atacar."
+                        }
+                    ],
+                    "turns": [
+                        {
+                            "turn": 1,
+                            "start_time": "2026-10-26T22:25:52.236158",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.13182460395272755,
+                                    "y": 0.5847980759825416,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "A6"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.918293055009639,
+                                    "y": 0.39536483422902796,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "B"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.10607955040190839,
+                                    "y": 0.600199121975118,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.9482923510169472,
+                                    "y": 0.3955703556777906,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:25:57.336422"
+                        },
+                        {
+                            "turn": 2,
+                            "start_time": "2026-10-26T22:25:57.353460",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.10607955040190839,
+                                    "y": 0.600199121975118,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.9482923510169472,
+                                    "y": 0.3955703556777906,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.08033449685108923,
+                                    "y": 0.6156001679676945,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3957758771265532,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:02.519829"
+                        },
+                        {
+                            "turn": 3,
+                            "start_time": "2026-10-26T22:26:02.536343",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.08033449685108923,
+                                    "y": 0.6156001679676945,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3957758771265532,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05458944330027007,
+                                    "y": 0.6310012139602709,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.39598139857531583,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:07.735553"
+                        },
+                        {
+                            "turn": 4,
+                            "start_time": "2026-10-26T22:26:07.752174",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05458944330027007,
+                                    "y": 0.6310012139602709,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.39598139857531583,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.39618692002407846,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:12.935449"
+                        },
+                        {
+                            "turn": 5,
+                            "start_time": "2026-10-26T22:26:12.952476",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 149.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.39618692002407846,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "A3",
+                                    "cmd": "A3.0"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "A3"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:18.119488"
+                        },
+                        {
+                            "turn": 6,
+                            "start_time": "2026-10-26T22:26:18.135996",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "A3"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "M"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A90",
+                                    "cmd": "A90.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 270.39252012413635,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:23.318749"
+                        },
+                        {
+                            "turn": 7,
+                            "start_time": "2026-10-26T22:26:23.335749",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 270.39252012413635,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A90",
+                                    "cmd": "A90.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "B",
+                                    "cmd": "B"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 180.39252012413635,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:28.505888"
+                        },
+                        {
+                            "turn": 8,
+                            "start_time": "2026-10-26T22:26:28.518888",
+                            "pre_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6464022599528473,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "B"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 180.39252012413635,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A90"
+                                }
+                            },
+                            "plays": [
+                                {
+                                    "bot_id": 2,
+                                    "llm_response": "A180",
+                                    "cmd": "A180.0"
+                                },
+                                {
+                                    "bot_id": 1,
+                                    "llm_response": "M",
+                                    "cmd": "M"
+                                }
+                            ],
+                            "cmd": "",
+                            "post_state": {
+                                "1": {
+                                    "id": 1,
+                                    "health": 30,
+                                    "x": 0.05,
+                                    "y": 0.6631295913432556,
+                                    "rot": 146.11155456706487,
+                                    "shield": false,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.\n",
+                                    "last_llm_response": "M"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "health": 30,
+                                    "x": 0.95,
+                                    "y": 0.3963924414728411,
+                                    "rot": 0.39252012413635384,
+                                    "shield": true,
+                                    "current_prompt": "Acercate lo más que puedas y concentrate en atacar.",
+                                    "last_llm_response": "A180"
+                                }
+                            },
+                            "end_time": "2026-10-26T22:26:33.685196"
+                        }
+                    ],
+                    "end_time": "2026-10-26T22:26:33.701852"
+                }
+            ],
+            "winner": null,
+            "end_time": "2026-10-26T22:26:33.701852"
+        }
+    ],
+    "llm_metadata": {
+        "configured_model": "llama3.2:3b",
+        "last_served_model": "llama3.2:3b",
+        "request_timeout": 75.0,
+        "warmup_timeout": 30.0,
+        "url": "http://localhost",
+        "port": 11434,
+        "config_snapshot": {
+            "num_ctx": 4096,
+            "path": "/api/chat"
+        },
+        "provider_metadata": {}
+    }
+}
