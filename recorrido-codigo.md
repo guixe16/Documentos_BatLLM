@@ -107,6 +107,3 @@ Acá ocurre la verificación. Hace dos controles distintos:
 - **State Diff:** `format_state_diff()` (línea 219).
 - **Tablero:** `analyzer_board.set_replay_state(...)` (línea 231) dibuja el estado **reconstruido**, no el guardado.
 
-## Dudas para la clase
-
--
